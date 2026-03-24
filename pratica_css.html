@@ -1,3 +1,8 @@
+<!-- O px funciona de acordo com a resolução da minha tela -->
+<!-- O % calcula de acordo com o elemento pai: o body -->
+<!-- div*nº - cria várias div's de uma vez -->
+<!-- CSS embutido (inline) -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,44 +11,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aula CSS - 1</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-	<div style="width:500px; height: fit-content; background-color: aliceblue; border-radius: 25px; border: solid 8px gold; margin: 20px">
-
-		<div style="width: 100px; height: 100px; border-radius: 50%;">
-			<img style="width: 100%;  height: 100%; margin-top: 20px;" src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt="">
+	<div class="card">
+		<div class="foto">
+			<img class="img" src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt=""> 
 		</div>
 
 		<div>
-			<h1 style="font-family: monospace; font-size: 30px;">
-				Meu nome é: Adriana
+			<h1 class="titulo">
+				Meu nome é: <span class="cor_destaque">Adriana</span>
 			</h1>
 
-			<p style="font-family: monospace; font-size: 15px;">
-				Mensagem: A vida não é um morango!
+			<p>
+				Mensagem: <span class="cor_destaque estilo_fonte">A vida não é um morango!</span>
 			</p>
 		</div>
+
 	</div>
 
-	<div style="width:500px; height: fit-content; background-color: aliceblue; border-radius: 25px; border: solid 8px green; margin: 20px">
-
-		<div style="width: 100px; height: 100px; border-radius: 25px;">
-			<img style="width: 100%;  height: 100%; margin-top: 20px;" src="https://cdn-icons-png.flaticon.com/256/3681/3681928.png" alt="">
+	<div class="card">
+		<div class="foto">
+			<img src="https://cdn-icons-png.flaticon.com/256/3681/3681928.png" alt="">
 		</div>
 
 		<div>
-			<h1 style="font-family: monospace; font-size: 30px;">
-				Meu nome é: Hugo
+			<h1 class="titulo">
+				Meu nome é: <span class="cor_destaque">Hugo</span>
 			</h1>
 
-			<p style="font-family: monospace; font-size: 15px;">
-				Mensagem: Um dia é da caça, o outro é do caçador.
+			<p>
+				Mensagem:<span class="cor_destaque estilo_fonte">Um dia é da caça, o outro é do caçador.</span>
 			</p>
 		</div>
 	</div>
-
 </body>
 
 </html>
